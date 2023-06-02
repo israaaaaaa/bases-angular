@@ -1,0 +1,10 @@
+<h1>Guerreros Z</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <app-dbz-list [characterList]="dbzService.characters" (onRemoveEmiter)="dbzService.onRemoveListener($event)"></app-dbz-list>
+    </div>
+    <div class="col">        
+        <app-form-add (onNewCharacter)="dbzService.onNewCharacterFather($event)"></app-form-add>
+    </div>
+</div>
